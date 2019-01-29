@@ -5,9 +5,9 @@
   <subtitle>个人</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://qulei.online/"/>
   <updated>2019-01-29T05:50:35.993Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://qulei.online/</id>
   
   <author>
     <name>Qu Lei</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>first</title>
-    <link href="http://yoursite.com/2019/01/28/first/"/>
-    <id>http://yoursite.com/2019/01/28/first/</id>
+    <link href="http://qulei.online/2019/01/28/first/"/>
+    <id>http://qulei.online/2019/01/28/first/</id>
     <published>2019-01-28T15:34:06.000Z</published>
     <updated>2019-01-29T05:50:35.993Z</updated>
     
@@ -32,8 +32,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2019/01/24/hello-world/"/>
-    <id>http://yoursite.com/2019/01/24/hello-world/</id>
+    <link href="http://qulei.online/2019/01/24/hello-world/"/>
+    <id>http://qulei.online/2019/01/24/hello-world/</id>
     <published>2019-01-24T07:31:19.449Z</published>
     <updated>2019-01-24T07:31:19.449Z</updated>
     
