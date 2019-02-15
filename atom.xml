@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://qulei.online/"/>
-  <updated>2019-02-01T09:42:20.178Z</updated>
+  <updated>2019-02-15T02:54:03.340Z</updated>
   <id>http://qulei.online/</id>
   
   <author>
@@ -15,6 +15,53 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>GIT 放弃本地修改</title>
+    <link href="http://qulei.online/2019/02/15/GIT-%E6%94%BE%E5%BC%83%E6%9C%AC%E5%9C%B0%E4%BF%AE%E6%94%B9/"/>
+    <id>http://qulei.online/2019/02/15/GIT-放弃本地修改/</id>
+    <published>2019-02-15T02:21:11.000Z</published>
+    <updated>2019-02-15T02:54:03.340Z</updated>
+    
+    <content type="html"><![CDATA[<p>  如果在修改时发现修改错误，而要放弃本地修改时</p><h1 id="未使用-git-add-缓存代码时"><a href="#未使用-git-add-缓存代码时" class="headerlink" title="未使用 git add 缓存代码时"></a>未使用 git add 缓存代码时</h1><p>  可以使用 git checkout – filepathname (比如： git checkout – readme.md  ，不要忘记中间的 “–” ，不写就成了检出分支了！！)。放弃所有的文件修改可以使用 git checkout .  命令。<br>此命令用来放弃掉所有还没有加入到缓存区（就是 git add 命令）的修改：内容修改与整个文件删除。但是此命令不会删除掉刚新建的文件。因为刚新建的文件还没已有加入到 git 的管理系统中。所以对于git是未知的。自己手动删除就好了。</p><h1 id="已经使用了-git-add-缓存了代码"><a href="#已经使用了-git-add-缓存了代码" class="headerlink" title="已经使用了  git add 缓存了代码"></a>已经使用了  git add 缓存了代码</h1><p>  可以使用  git reset HEAD filepathname （比如： git reset HEAD readme.md）来放弃指定文件的缓存，放弃所以的缓存可以使用 git reset HEAD . 命令。<br>此命令用来清除 git  对于文件修改的缓存。相当于撤销 git add 命令所在的工作。在使用本命令后，本地的修改并不会消失，而是回到了如（一）所示的状态。继续用（一）中的操作，就可以放弃本地的修改。</p><h1 id="已经用-git-commit-提交了代码"><a href="#已经用-git-commit-提交了代码" class="headerlink" title="已经用 git commit  提交了代码"></a>已经用 git commit  提交了代码</h1><p>  可以使用 git reset –hard HEAD^ 来回退到上一次commit的状态。此命令可以用来回退到任意版本：git reset –hard  commitid<br>  可以使用 git log 命令来查看git的提交历史。git log 的输出如下,之一这里可以看到第一行就是 commitid：</p><pre><code>commit 8aadf6f2908fa0a9278498368619e43923f27dd8 (HEAD -&gt; feature/1.0.4, origin/feature/1.0.4)Author: ******Date:   Wed Feb 13 11:19:17 2019 +0800   删掉无用代码commit d8261f135ced41abcb6d595f625c613e76d91fa7Author: ******Date:   Fri Jan 25 18:07:24 2019 +0800   对接管理平台commit 2983d6e1a812800f17671cc7463e7b6ba47c48fbAuthor: ******Date:   Mon Jan 21 15:35:12 2019 +0800    对接管理平台commit 6483b498d9b2436ad79119b5b6fdb5ffcf9c0360 (origin/develop, develop)Merge: 5ea0783 85bdac7Author: ******Date:   Thu Jan 3 10:00:00 2019 +0800</code></pre><p>可以看出现在的状态在 commitid 为 8aadf6f2908fa0a9278498368619e43923f27dd8 的提交上（有 HEAD -&gt; feature/1.0.4 标记）。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;  如果在修改时发现修改错误，而要放弃本地修改时&lt;/p&gt;
+&lt;h1 id=&quot;未使用-git-add-缓存代码时&quot;&gt;&lt;a href=&quot;#未使用-git-add-缓存代码时&quot; class=&quot;headerlink&quot; title=&quot;未使用 git add 缓存代码时&quot;&gt;&lt;/a&gt;未使用
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="http://qulei.online/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python函数参数</title>
+    <link href="http://qulei.online/2019/02/13/Python%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0/"/>
+    <id>http://qulei.online/2019/02/13/Python函数参数/</id>
+    <published>2019-02-13T09:13:39.000Z</published>
+    <updated>2019-02-15T02:52:36.116Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="函数参数"><a href="#函数参数" class="headerlink" title="函数参数"></a>函数参数</h1><h2 id="位置参数"><a href="#位置参数" class="headerlink" title="位置参数"></a>位置参数</h2><pre><code>def person(name, age):  print(&apos;name:&apos;, name, &apos;age:&apos;, age)</code></pre><h2 id="默认参数"><a href="#默认参数" class="headerlink" title="默认参数"></a>默认参数</h2><pre><code>def person1(name, age, location=&apos;beijing&apos;):  print(&apos;name:&apos;, name, &apos;age:&apos;, age, &apos;location&apos;, location)</code></pre><h2 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h2><h2 id="关键字参数"><a href="#关键字参数" class="headerlink" title="关键字参数"></a>关键字参数</h2><pre><code>def person2(name, age, **kw):  print(&apos;name:&apos;, name, &apos;age:&apos;, age, &apos;other:&apos;, kw)</code></pre><h2 id="命名关键字参数"><a href="#命名关键字参数" class="headerlink" title="命名关键字参数"></a>命名关键字参数</h2><pre><code>def person3(name, age, *, city, job):  print(name, age, city, job)</code></pre><p>参数定义的顺序必须是：必选参数、默认参数、可变参数、命名关键字参数和关键字参数。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;函数参数&quot;&gt;&lt;a href=&quot;#函数参数&quot; class=&quot;headerlink&quot; title=&quot;函数参数&quot;&gt;&lt;/a&gt;函数参数&lt;/h1&gt;&lt;h2 id=&quot;位置参数&quot;&gt;&lt;a href=&quot;#位置参数&quot; class=&quot;headerlink&quot; title=&quot;位置参数&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://qulei.online/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>first practice</title>
