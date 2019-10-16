@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://qulei.online/2019/02/15/GIT-%E6%94%BE%E5%BC%83%E6%9C%AC%E5%9C%B0%E4%BF%AE%E6%94%B9/</loc>
+    <loc>http://qulei.online/2019/01/24/hello-world/</loc>
     
-    <lastmod>2019-02-15T02:58:12.909Z</lastmod>
+    <lastmod>2019-10-16T07:57:11.099Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qulei.online/2019/10/16/PostMan%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2019-10-16T07:53:47.635Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://qulei.online/2019/02/13/Python%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0/</loc>
     
-    <lastmod>2019-02-15T02:57:20.447Z</lastmod>
+    <lastmod>2019-02-15T05:55:45.038Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://qulei.online/2019/02/15/GIT-%E6%94%BE%E5%BC%83%E6%9C%AC%E5%9C%B0%E4%BF%AE%E6%94%B9/</loc>
+    
+    <lastmod>2019-02-15T02:58:12.909Z</lastmod>
     
   </url>
   
@@ -40,13 +54,6 @@
     <loc>http://qulei.online/tags/index.html</loc>
     
     <lastmod>2019-01-30T06:57:45.271Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://qulei.online/2019/01/24/hello-world/</loc>
-    
-    <lastmod>2019-01-24T07:31:19.449Z</lastmod>
     
   </url>
   
