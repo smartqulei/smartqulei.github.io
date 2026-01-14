@@ -1,0 +1,1 @@
+echo "uxiang.space" | Out-File -Encoding ASCII CNAME
